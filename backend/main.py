@@ -9,8 +9,8 @@ from core import run_full_analysis, generate_adversarial_variants
 
 app = FastAPI(
     title="Cultural Bridge Tech API",
-    description="MVP backend for cross-lingual deception detection (mock SAE layer)",
-    version="0.1.0-mvp"
+    description="Mechanistic Diagnostic Layer – SAE-based D6/D3 detection + L2 decision hints",
+    version="0.2.0"
 )
 
 
@@ -30,8 +30,10 @@ def health():
     mode = os.getenv("CB_SAE_MODE", "mock").upper()
     return {
         "status": "ok",
-        "version": "0.1.0-mvp",
+        "version": "0.2.0",
         "sae_mode": mode,
+        "layer": "Mechanistic Diagnostic & Monitoring",
+        "l2_adapter": "enabled",
         "note": "Mock SAE is active by default. Set CB_SAE_MODE=real and implement real_sae_scaffold.py when compute is available."
     }
 
