@@ -1,0 +1,9 @@
+{
+  "layer": 16,
+  "language": "hausa",
+  "n_pairs": 4,
+  "provenance": "CAA mock residual (set CB_PAL_REAL=1 for real hooks)",
+  "model_name": "mock",
+  "dim": 2304,
+  "norm": 1.0
+}

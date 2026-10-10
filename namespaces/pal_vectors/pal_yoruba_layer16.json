@@ -1,0 +1,9 @@
+{
+  "layer": 16,
+  "language": "yoruba",
+  "n_pairs": 10,
+  "provenance": "CAA mock residual (set CB_PAL_REAL=1 for real hooks)",
+  "model_name": "mock",
+  "dim": 2304,
+  "norm": 0.9999998807907104
+}
